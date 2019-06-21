@@ -3,13 +3,13 @@ top = open('templates/top.html').read()
 bottom = open('templates/bottom.html').read()
 
 # Read in index HTML code
-about = open('content/about.html').read()
+about = open('content/index.html').read()
 experience = open('content/experience.html').read()
 education = open('content/education.html').read()
 
 # Combine template HTML code with content HTML code
 about = top + about + bottom
-open('docs/about.html', 'w+').write(about)
+open('docs/index.html', 'w+').write(about)
 
 # Rinse and repeat, but with blog HTML code
 experience = top + experience + bottom
