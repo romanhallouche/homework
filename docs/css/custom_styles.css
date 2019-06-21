@@ -1,0 +1,59 @@
+.transparent-background {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.borderRadiusRound {
+	border-radius: 5px;
+}
+
+.imageBorder {
+	/*border-width: 0.2rem !important;*/
+	border: 0.2rem solid rgba(255,255,255,.2) !important;
+}
+
+.navBarThin {
+	width: 13rem !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
