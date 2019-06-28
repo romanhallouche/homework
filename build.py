@@ -35,34 +35,35 @@ pages = [
 ]
 
 
-for page in pages:
-    base = open('templates/base.html').read()
-    page_content = open(page["input"]).read()
-    final_page = base.replace("{{content}}", page_content)
-    open(page["output"], "w+").write(final_page)
+def main():
+    for page in pages:
+        base = open('templates/base.html').read()
+        page_content = open(page["input"]).read()
+        final_page = base.replace("{{content}}", page_content)
+        open(page["output"], "w+").write(final_page)
+
+
+
+if __name__ == "__main__":
+    main()
 
 
 
 
-
-
-
-
-
+######### Attempt to Phase 5 but couldn't figure out how  ###########
 
 # def main():
-#     base = open('templates/base.html').read()
-#     page_content = open_page(name)
-#     finished_page = base.replace("{{content}}", page_content)
-#     open_finished_page(name)
-
-
-# def open_page(name):
-#     open("content/" + name + ".html").read()
-
-
-# def open_finished_page(name):
-#     open("docs/" + name + ".html", "w+").write(finished_page)
+#     for page in pages:
+#         base = open('templates/base.html').read()
+#         page_content = open_input()
+#         final_page = create_final_page()
+#         open(page["output"], "w+").write(final_page)
 
 
 
+# def open_input():
+#     open(page["input"]).read()
+
+
+# def create_final_page():
+#     base.replace("{{content}}", page_content)
